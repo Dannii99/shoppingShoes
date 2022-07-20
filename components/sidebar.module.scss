@@ -1,0 +1,62 @@
+.sidebar {
+    height: 3rem;
+    padding: 1rem 3rem;
+    display: flex;
+    width: 100%;
+    z-index: 5;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: all 0.5s ease-out;
+    nav {
+        width: 100%;
+        max-width: 80rem;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        & > div a {
+            margin: 8px 0;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 14px;
+            padding: 8px 12px;
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 0.025em;
+            border: none;
+            transition: all 0.125s ease;
+        }
+    }
+}
+.inputSearch {
+    text-decoration: none;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid #eaeaea;
+    font-size: 14px;
+    padding: 8px 16px;
+    height: 28px;
+}
+
+.bgBlack {
+    background-color: #000000b9;
+}
+
+.bgTransparent {
+    background-color: transparent;
+}
+
+.navBlack a {
+    color: #1a1a1ab9;
+    &:hover {
+        color: #000000b9;
+    }
+}
+
+.navWhite a {
+    color: rgb(235, 235, 235);
+    &:hover {
+        color: #ffffff;
+    }
+}
