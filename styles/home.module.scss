@@ -1,3 +1,6 @@
+@use 'utils/variables' as v;
+@import 'utils/breakpoints.scss';
+
 .banner {
     background-image: url(../public/img/grupo-8.jpg);
     background-position: center;
@@ -10,7 +13,7 @@
     & > div {
         width: 100%;
         flex: 1 1 auto;
-        background-color: rgba(0, 0, 0, 0.068);
+        background-color: v.$color-00000011;
         position: relative;
     }
 }
@@ -22,13 +25,6 @@
     transform: translate(-48px, -64px);
 }
 
-.objetFitCover {
-    object-fit: cover;
-}
-
-.textjustify {
-    text-align: justify;
-}
 
 .imageSports {
     background-image: url(../public/img/grupo-11.jpg);
@@ -37,13 +33,20 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
-    height: 30rem;
+    height: 40rem;
 }
 
-.BgDark {
+.containerDark {
     position: relative;
-    background-color: rgb(20 20 20);
+    background-color: v.$color-374149;
     width: 100%;
     min-height: 30rem;
     padding: 3rem;
 }
+
+/* 
+@include respond-above(md) {
+    .banner {
+        display: none;
+    }
+} */

@@ -1,9 +1,40 @@
+@use './variables' as v;
+
 .container {
     width: 100%;
     max-width: 1400px;
     padding: 2rem 1rem;
     margin: 0 auto;
 }
+
+.dFlex {
+  display: flex;
+}
+
+.flexColunm {
+  flex-direction: column;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.objetFitCover {
+  object-fit: cover;
+}
+
+.textjustify {
+  text-align: justify;
+}
+
+.textCenter {
+  text-align: center;
+}
+
 
 /* width */
 ::-webkit-scrollbar {
@@ -12,15 +43,15 @@
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background-color: v.$color-f1f1f1; 
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #018e5e; 
+    background-color: v.$color-018e5e; 
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #028157; 
+    background-color: v.$color-018e5e; 
   }

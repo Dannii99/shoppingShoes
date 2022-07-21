@@ -1,10 +1,26 @@
 import React, { useState, useEffect } from 'react';
+import { AudioOutlined } from '@ant-design/icons';
+import { Input, Space } from 'antd';
+
+
 import Link from 'next/link'
 import Styles from './sidebar.module.scss'
 import Image from 'next/image'
 import Logo from '../public/img/Shoes.svg'
 
 export default function Sidebar() {
+  
+  const { Search } = Input;
+  const suffix = (
+    <AudioOutlined
+      style={{
+        fontSize: 16,
+        color: '#1890ff',
+      }}
+    />
+  );
+  const onSearch = (value) => console.log(value);
+
   const [scrollTop, setScrollTop] = useState(0);
   const [scroll, setScroll] = useState(false);
 
@@ -36,7 +52,7 @@ export default function Sidebar() {
                 width={50}
               />
           </div>
-          <div className={`${scroll ? Styles.navWhite : Styles.navBlack}`}>
+          <div className={`dFlex alignCenter ${scroll ? Styles.navWhite : Styles.navBlack}`}>
             <Link href="/">
                 <a>Home</a>
             </Link>
@@ -46,7 +62,13 @@ export default function Sidebar() {
             <Link href="/contact">
                 <a>Contact</a>
             </Link>
-            <input className={Styles.inputSearch} placeholder="Search..." />
+            <Space direction="vertical">
+              <Search
+                placeholder="Search..."
+                onSearch={onSearch}
+               
+              />
+            </Space>
           </div>
         </nav>
     </div>

@@ -1,6 +1,8 @@
+@use '/styles/utils/variables' as v;
+
 .sidebar {
     height: 3rem;
-    padding: 1rem 3rem;
+    padding: 0rem 3rem;
     display: flex;
     width: 100%;
     z-index: 5;
@@ -29,18 +31,19 @@
         }
     }
 }
+
 .inputSearch {
     text-decoration: none;
-    background: white;
+    background-color: v.$color-ffffff;
     border-radius: 4px;
-    border: 1px solid #eaeaea;
+    border: 1px solid v.$color-eaeaea;
     font-size: 14px;
     padding: 8px 16px;
     height: 28px;
 }
 
 .bgBlack {
-    background-color: #000000b9;
+    background-color: v.$color-000000b9;
 }
 
 .bgTransparent {
@@ -50,13 +53,13 @@
 .navBlack a {
     color: #1a1a1ab9;
     &:hover {
-        color: #000000b9;
+        color: v.$color-000000b9;
     }
 }
 
 .navWhite a {
-    color: rgb(235, 235, 235);
+    color: v.$color-eaeaea;
     &:hover {
-        color: #ffffff;
+        color: v.$color-ffffff;
     }
 }

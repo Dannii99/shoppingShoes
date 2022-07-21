@@ -1,0 +1,29 @@
+
+//
+//  COLORS
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+$color-ffffff:  #ffffff;
+$color-f1f1f1:  #f1f1f1;
+$color-eaeaea:  #eaeaea;
+$color-374149:  #374149;
+$color-000000:  #000000;
+$color-000000b9:#000000b9;
+$color-00000011:#00000011;
+$color-018e5e:  #018e5e;
+
+//
+
+
+//
+//  MEDIA QUERIES
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// A map of breakpoints.
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px
+);

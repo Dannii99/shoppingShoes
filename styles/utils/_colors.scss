@@ -1,0 +1,28 @@
+
+@use './variables' as v;
+
+/* BACKGROUND */
+.bg-ffffff {
+    background-color: v.$color-ffffff;
+}
+
+.bg-000000 {
+    background-color: v.$color-000000;
+}
+
+.bg-374149 {
+    background-color: v.$color-374149;
+}
+
+/* COLORS */
+.color-ffffff {
+    color: v.$color-ffffff;
+}
+
+.color-000000 {
+    color: v.$color-000000;
+}
+
+.color-374149 {
+    color: v.$color-374149;
+}
